@@ -107,6 +107,20 @@ footer{padding:22px 0 30px;text-align:center;font-weight:700}
 #ts{position:fixed;left:50%;top:calc(76px + env(safe-area-inset-top,0px));transform:translateX(-50%) translateY(-14px);background:var(--ink);color:#5dff9a;font:700 15px ui-monospace,Menlo,monospace;padding:6px 14px;opacity:0;transition:.2s;z-index:99;direction:ltr;pointer-events:none;max-width:92vw}
 #ts.on{opacity:1;transform:translateX(-50%)}
 @media(max-width:820px){.hg,.abg,.edg{grid-template-columns:1fr}.emb{max-width:230px}header nav{display:none}#hero::before{left:50%;top:80%}.sh.hide{display:none}.cl span{flex-basis:96px}}
+@media(min-width:1000px){
+#work .wrap{max-width:1320px}
+#work .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 40px;padding:28px}
+.card h3{font-size:44px}
+.card p{font-size:19px}
+.cb{padding:20px 26px 24px}
+}
+@media(min-width:1300px){
+#work .wrap{max-width:1500px}
+#work .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 32px}
+.card h3{font-size:40px}
+.card p{font-size:18px}
+.cb{padding:18px 22px 22px}
+}
 </style>
 </head>
 <body>
