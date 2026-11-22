@@ -267,8 +267,6 @@ async function dl(){
   a.click();
   a.remove();
 }
-try{const d=window.claude&&await claude.use('downloads');if(d){await d.save({filename:'Ameer_Mahmoud_CV.pdf',data:u8});return}}catch(e){if(e&&e.code==='declined')return}
-const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([u8],{type:'application/pdf'}));a.download='Ameer_Mahmoud_CV.pdf';document.body.appendChild(a);a.click();a.remove()}
 document.querySelectorAll('.cv').forEach(b=>b.onclick=dl);
 const EDIT=location.hash==='#edit';
 function setImg(th,s){th.style.backgroundImage='url("'+s+'")';th.classList.add('has')}
